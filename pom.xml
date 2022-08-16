@@ -28,12 +28,12 @@
 	<distributionManagement>
 		 <snapshotRepository>
 		    <id>satyaRepo</id>
-		    <url>http://13.112.136.123:8081/repository/satya-snapshots/</url>
+		    <url>http://18.236.126.209:8081/repository/satya-snapshots/</url>
 		 </snapshotRepository>
 		
 		<repository>
 		    <id>nexusRepo</id>
-		    <url>http://13.112.136.123:8081/repository/satya-releases/</url>
+		    <url>http://18.236.126.209:8081/repository/satya-releases/</url>
 		</repository>
   	</distributionManagement>
 	
