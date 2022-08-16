@@ -27,7 +27,7 @@
 	
 	<distributionManagement>
 		 <snapshotRepository>
-		    <id>nexusRepo</id>
+		    <id>satyaRepo</id>
 		    <url>http://13.112.136.123:8081/repository/sample-snapshots/</url>
 		 </snapshotRepository>
 		
