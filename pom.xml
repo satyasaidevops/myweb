@@ -27,12 +27,12 @@
 	
 	<distributionManagement>
 		 <snapshotRepository>
-		    <id>nexusRepo</id>
+		    <id>satyaRepo</id>
 		    <url>http://35.91.197.171:8081/repository/sai-snapshots/</url>
 		 </snapshotRepository>
 		
 		<repository>
-		    <id>nexusRepo</id>
+		    <id>satyaRepo</id>
 		    <url>http://35.91.197.171:8081/repository/sai-releases/</url>
 		</repository>
   	</distributionManagement>
