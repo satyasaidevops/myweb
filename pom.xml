@@ -27,13 +27,13 @@
 	
 	<distributionManagement>
 		 <snapshotRepository>
-		    <id>saiRepo</id>
-		    <url>http://54.244.71.21:8081/repository/satya-snapshots/</url>
+		    <id>suryaRepo</id>
+		    <url>http://35.92.77.45:8081/repository/satya-snapshot/</url>
 		 </snapshotRepository>
 		
 		<repository>
-		    <id>saiRepo</id>
-		    <url>http://54.244.71.21:8081/repository/satya-releases/</url>
+		    <id>suryaRepo</id>
+		    <url>http://35.92.77.45:8081/repository/surya-releases/</url>
 		</repository>
   	</distributionManagement>
 	
