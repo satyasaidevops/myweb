@@ -28,12 +28,12 @@
 	<distributionManagement>
 		 <snapshotRepository>
 		    <id>nexusRepo</id>
-		    <url>http://172.31.47.5:8081/repository/satyasai-snapshots/</url>
+		    <url>http://172.31.41.252:8081/repository/satyasai-snapshots/</url>
 		 </snapshotRepository>
 		
 		<repository>
 		    <id>nexusRepo</id>
-		    <url>http://172.31.47.5:8081/repository/satyasai-releases/</url>
+		    <url>http://172.31.41.252:8081/repository/satyasai-releases/</url>
 		</repository>
   	</distributionManagement>
 	
