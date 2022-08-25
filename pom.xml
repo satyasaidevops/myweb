@@ -28,12 +28,12 @@
 	<distributionManagement>
 		 <snapshotRepository>
 		    <id>nexusRepo</id>
-		    <url>http://34.217.191.109:8081/repository/prasad-snapshots/</url>
+		    <url>http://172.31.43.232:8081/repository/prasad-snapshots/</url>
 		 </snapshotRepository>
 		
 		<repository>
 		    <id>nexusRepo</id>
-		    <url>http://34.217.191.109:8081/repository/prasad-releases/</url>
+		    <url>http://172.31.43.232:8081/repository/prasad-releases/</url>
 		</repository>
   	</distributionManagement>
 	
