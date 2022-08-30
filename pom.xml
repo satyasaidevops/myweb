@@ -10,7 +10,7 @@
 	
 	<properties>
 		<docker.image.prefix>kammana</docker.image.prefix>
-		<sonar.host.url>http://172.31.31.42:9000/</sonar.host.url>
+		<sonar.host.url>http://13.230.63.60:9000/</sonar.host.url>
 
 	</properties>
 	<dependencies>
@@ -28,12 +28,12 @@
 	<distributionManagement>
 		 <snapshotRepository>
 		    <id>nexusRepo</id>
-		    <url>http://172.31.18.79:8081/repository/sai-snapshots/</url>
+		    <url>http://52.198.230.33:8081/repository/sai-snapshots/</url>
 		 </snapshotRepository>
 		
 		<repository>
 		    <id>nexusRepo</id>
-		    <url>//http://172.31.18.79:8081/repository/sai-releases/</url>
+		    <url>//http://52.198.230.33:8081/repository/sai-releases/</url>
 		</repository>
   	</distributionManagement>
 	
