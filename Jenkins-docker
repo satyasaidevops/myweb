@@ -34,7 +34,7 @@ pipeline{
                   nexusUrl: '172.31.9.81:8081', 
                   nexusVersion: 'nexus3', 
                   protocol: 'http', 
-                  repository: 'satya-releases', 
+                  repository: 'sai-releases', 
                   version: '8.2.0'  
               }
             }
