@@ -31,7 +31,7 @@ pipeline{
                   ], 
                   credentialsId: 'nexus3', 
                   groupId: 'in.javahome', 
-                  nexusUrl: '54.185.91.37:8081', 
+                  nexusUrl: '172.31.9.81:8081', 
                   nexusVersion: 'nexus3', 
                   protocol: 'http', 
                   repository: 'satya-releases', 
@@ -42,15 +42,15 @@ pipeline{
             steps{
                  sh 'docker build -t satyasai1089/spring-boot-mongo .'
                  sh 'docker build -t tomcat:${BUILD_NUMBER} .'
-                 sh 'docker run -itd --name satya -p 2900:8080 tomcat:${BUILD_NUMBER}'
+                 sh 'docker run -itd --name srini36 -p 2900:8080 tomcat:${BUILD_NUMBER}'
              }
          }
         stage('Push Docker Image'){
              steps{
                   withCredentials([string(credentialsId: 'DOCKER_HUB_CREDENTIALS', variable: 'DOCKER_HUB_CREDENTIALS')]) {
-                      sh "docker login -u  satyasai1089 -p ${DOCKER_HUB_CREDENTIALS}"
+                      sh "docker login -u satyasai1089 -p ${DOCKER_HUB_CREDENTIALS}"
             }
-            sh 'docker push  satyasai1089/spring-boot-mongo'
+            sh 'docker push satyasai1089/spring-boot-mongo'
         }
       }
         
