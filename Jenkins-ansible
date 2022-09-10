@@ -34,7 +34,7 @@ pipeline{
                   nexusUrl: '172.31.46.129:8081', 
                   nexusVersion: 'nexus3', 
                   protocol: 'http', 
-                  repository: 'satya-releases', 
+                  repository: 'satya-snapshots', 
                   version: '8.2.0'  
               }
             }
