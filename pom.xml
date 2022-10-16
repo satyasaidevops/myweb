@@ -32,12 +32,12 @@
 	<distributionManagement>
 		 <snapshotRepository>
 		    <id>nexusRepo</id>
-		    <url>http://35.72.179.11:8081/repository/satya-snapshots/</url>
+		    <url>http://172.31.23.166:8081/repository/satya-snapshots/</url>
 		 </snapshotRepository>
 		
 		<repository>
 		    <id>nexusRepo</id>
-		    <url>http://35.72.179.11:8081/repository/satya-releases/</url>
+		    <url>http://172.31.23.166:8081/repository/satya-releases/</url>
 		</repository>
   	</distributionManagement>
 	
