@@ -37,7 +37,7 @@
 		
 		<repository>
 		    <id>nexusRepo</id>
-		    <url>http://13.231.204.102:8081/repository/sao-releases/</url>
+		    <url>http://13.231.204.102:8081/repository/sai-releases/</url>
 		</repository>
   	</distributionManagement>
 	
