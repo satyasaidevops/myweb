@@ -1,5 +1,5 @@
 ---
- - hosts: 172.31.13.205
+ - hosts: 172.31.3.206
    tasks:
      - name: copy the file from local to remote
        copy:
