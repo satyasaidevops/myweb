@@ -15,8 +15,8 @@ pipeline {
         stage('Deploy to Salesforce') {
             steps {
                 script {
-                    withCredentials([usernamePassword(credentialsId: 'SF_CREDENTIALS', passwordVariable: 'SF_PASSWORD', usernameVariable: 'SF_USERNAME')]) {
-                        sh "sfdx force:source:deploy -u ${SF_USERNAME} -p ${SF_PASSWORD} -p ./force-app"
+                    withCredentials([usernamePassword(credentialsId: 'SF_CREDENTIALS', passwordVariable: 'SF_git@12345678', usernameVariable: 'SF_satyasaidevops')]) {
+                        sh "sfdx force:source:deploy -u ${SF_satyasaidevops} -p ${SF_git@12345678} -p ./force-app"
                     }
                 }
             }
