@@ -9,13 +9,13 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'GIT_CREDENTIALS', url: 'https://github.com/satyasaidevops/myweb.git']]])
+                checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'GIT_CREDENTIALS', url: 'https://github.com/your-repo/your-project.git']]])
             }
         }
         stage('Deploy to Salesforce') {
             steps {
                 script {
-                    withCredentials([usernamePassword(credentialsId: 'SF_CREDENTIALS', passwordVariable: 'git@12345678', usernameVariable: 'satyasaidevops')]) {
+                    withCredentials([usernamePassword(credentialsId: 'SF_CREDENTIALS', passwordVariable: 'SF_PASSWORD', usernameVariable: 'SF_USERNAME')]) {
                         sh "sfdx force:source:deploy -u ${SF_USERNAME} -p ${SF_PASSWORD} -p ./force-app"
                     }
                 }
